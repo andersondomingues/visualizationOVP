@@ -1,0 +1,179 @@
+Info Session started: Mon Jul  9 13:21:28 2018
+
+Info ---------------- FLAGS ----------------
+Info --program  top/u1/cpu1=application/application1.OR1K.elf
+Info --program  top/u1/cpu2=application/application2.OR1K.elf
+Info --verbose
+Info --output  imperas.log
+Info --stoponcontrolc
+Info --Q  0.0001
+Info --httpvis
+Info ------------- ENVIRONMENT -------------
+Info IMPERAS_ARCH                             = Linux64
+Info IMPERASD_LICENSE_FILE                    = 2700@kriti.inf.pucrs.br
+Info IMPERAS_BACKTRACE                        = 1
+Info IMPERAS_HOME                             = /soft64/imperas/ferramentas/64bits/Imperas.20170201
+Info IMPERAS_ISS                              = /soft64/imperas/ferramentas/64bits/Imperas.20170201/bin/Linux64/iss.exe
+Info IMPERAS_M32                              = 0
+Info IMPERAS_RUNTIME                          = CpuManager
+Info IMPERAS_SHRSUF                           = so
+Info IMPERAS_UNAME                            = Linux
+Info IMPERAS_VLNV                             = /soft64/imperas/ferramentas/64bits/Imperas.20170201/lib/Linux64/ImperasLib
+Info LD_LIBRARY_PATH                          = /soft64/util/accelera/systemc/2.3.1/lib-linux64:/soft64/imperas/ferramentas/64bits/Imperas.20170201/bin/Linux64:/soft64/imperas/ferramentas/64bits/Imperas.20170201/lib/Linux64/External/lib:/soft64/imperas/ferramentas/64bits/Imperas.20170201/bin/Linux64:/soft64/imperas/ferramentas/64bits/Imperas.20170201/bin/Linux64
+Info LM_LICENSE_FILE                          = 2700@kriti.inf.pucrs.br
+Info SYSTEMC_HOME                             = /soft64/util/accelera/systemc/2.3.1
+Info SYSTEMC                                  = /soft64/util/accelera/systemc/2.3.1
+Info --------------------------------------
+
+
+CpuManagerMulti (64-Bit) v20170201.0 Open Virtual Platform simulator from www.IMPERAS.com.
+Copyright (c) 2005-2017 Imperas Software Ltd.  Contains Imperas Proprietary Information.
+Licensed Software, All Rights Reserved.
+Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
+
+CpuManagerMulti started: Mon Jul  9 13:21:28 2018
+
+
+Info (OP_AL) Found attribute symbol 'modelAttrs' in file '/home/adomingues/gaph/sischip/ovp/multiprocessor_reset/module/model.so'
+Info (OP_AL) Found attribute symbol 'modelAttrs' in file '/soft64/imperas/ferramentas/64bits/Imperas.20170201/lib/Linux64/ImperasLib/ovpworld.org/processor/or1k/1.0/model.so'
+Info (OP_AL) Found attribute symbol 'modelAttrs' in file '/soft64/imperas/ferramentas/64bits/Imperas.20170201/lib/Linux64/ImperasLib/ovpworld.org/semihosting/or1kNewlib/1.0/model.so'
+Info (HTTP_PORT) 'top' listening on port 8000
+Info (OR_OF) Target 'top/u1/cpu1' has object file read from 'application/application1.OR1K.elf'
+Info (OR_PH) Program Headers:
+Info (OR_PH) Type           Offset     VirtAddr   PhysAddr   FileSiz    MemSiz     Flags Align
+Info (OR_PD) LOAD           0x00002000 0x00000000 0x00000000 0x0000df9c 0x0000e0c4 RWE   2000
+Info (OR_OF) Target 'top/u1/cpu2' has object file read from 'application/application2.OR1K.elf'
+Info (OR_PH) Program Headers:
+Info (OR_PH) Type           Offset     VirtAddr   PhysAddr   FileSiz    MemSiz     Flags Align
+Info (OR_PD) LOAD           0x00002000 0x00000000 0x00000000 0x0000df34 0x0000e054 RWE   2000
+Info (HARNESS) Release processor cpu1
+Info (HARNESS) Release processor cpu2
+Info (HARNESS) Simulate to End
+CPU 2 starting acumulação...
+CPU 1 starting fibonacci...
+CPU 1: fib(  0) = 0 [flag:1] 
+CPU 2: sum(  0) = 0 [flag:1  e0000000] 
+CPU 1: fib(  1) = 1 [flag:1] 
+CPU 2: sum(  1) = 1 [flag:1  e0000000] 
+CPU 1: fib(  2) = 1 [flag:1] 
+CPU 2: sum(  1) = 1 [flag:1  e0000000] 
+CPU 1: fib(  3) = 2 [flag:1] 
+CPU 2: sum(  2) = 3 [flag:1  e0000000] 
+CPU 1: fib(  4) = 3 [flag:1] 
+CPU 2: sum(  3) = 6 [flag:1  e0000000] 
+CPU 1: fib(  5) = 5 [flag:1] 
+CPU 2: sum(  5) = 15 [flag:1  e0000000] 
+CPU 1: fib(  6) = 8 [flag:1] 
+CPU 2: sum(  8) = 36 [flag:1  e0000000] 
+CPU 1: fib(  7) = 13 [flag:1] 
+CPU 2: sum( 13) = 91 [flag:1  e0000000] 
+CPU 1: fib(  8) = 21 [flag:1] 
+CPU 2: sum( 21) = 231 [flag:1  e0000000] 
+CPU 1: fib(  9) = 34 [flag:1] 
+CPU 2: sum( 34) = 595 [flag:1  e0000000] 
+CPU 1: fib( 10) = 55 [flag:1] 
+CPU 2: sum( 55) = 1540 [flag:1  e0000000] 
+CPU 1: fib( 11) = 89 [flag:1] 
+CPU 2: sum( 89) = 4005 [flag:1  e0000000] 
+CPU 1: fib( 12) = 144 [flag:1] 
+CPU 2: sum( 89) = 4005 [flag:1  e0000000] 
+CPU 2: sum(144) = 10440 [flag:1  e0000000] 
+CPU 1: fib( 13) = 233 [flag:0] 
+CPU 2: sum(233) = 27261 [flag:1  e0000000] 
+CPU 1: fib( 14) = 377 [flag:0] 
+CPU 2: sum(377) = 71253 [flag:1  e0000000] 
+CPU 1: fib( 15) = 610 [flag:0] 
+CPU 2: sum(610) = 186355 [flag:1  e0000000] 
+CPU 1: fib( 16) = 987 [flag:0] 
+CPU 2: sum(987) = 487578 [flag:1  e0000000] 
+CPU 1: fib( 17) = 1597 [flag:0] 
+CPU 2: sum(1597) = 1276003 [flag:1  e0000000] 
+CPU 1: fib( 18) = 2584 [flag:0] 
+CPU 2: sum(2584) = 3339820 [flag:1  e0000000] 
+CPU 1: fib( 19) = 4181 [flag:0] 
+CPU 2: sum(4181) = 8742471 [flag:1  e0000000] 
+CPU 1: fib( 20) = 6765 [flag:0] 
+CPU 2: sum(6765) = 22885995 [flag:1  e0000000] 
+CPU 1: fib( 21) = 10946 [flag:0] 
+CPU 2: sum(10946) = 59912931 [flag:1  e0000000] 
+CPU 1: fib( 22) = 17711 [flag:0] 
+CPU 2: sum(17711) = 156848616 [flag:1  e0000000] 
+CPU 1: fib( 23) = 28657 [flag:0] 
+CPU 2: sum(28657) = 410626153 [flag:1  e0000000] 
+CPU 1: fib( 24) = 46368 [flag:0] 
+CPU 2: sum(46368) = 1075018896 [flag:1  e0000000] 
+CPU 1: fib( 25) = 75025 [flag:0] 
+CPU 2: sum(75025) = -1480554471 [flag:1  e0000000] 
+CPU 1: fib( 26) = 121393 [flag:0] 
+CPU 2: sum(121393) = -1221743671 [flag:1  e0000000] 
+CPU 1: fib( 27) = 196418 [flag:0] 
+CPU 2: sum(196418) = 2110244387 [flag:1  e0000000] 
+CPU 1: fib( 28) = 317811 [flag:0] 
+CPU 2: sum(317811) = -1037532786 [flag:1  e0000000] 
+CPU 1: fib( 29) = 514229 [flag:0] 
+CPU 2: sum(514229) = -927996841 [flag:1  e0000000] 
+CPU 1: fib( 30) = 832040 [flag:0] 
+CPU 2: sum(832040) = -1746654156 [flag:1  e0000000] 
+CPU 1: fib( 31) = 1346269 [flag:0] 
+CPU 2: sum(1346269) = -17316141 [flag:1  e0000000] 
+CPU 1: fib( 32) = 2178309 [flag:0] 
+CPU 2: sum(2178309) = 1694191503 [flag:1  e0000000] 
+CPU 1: fib( 33) = 3524578 [flag:0] 
+CPU 2: sum(3524578) = 804091315 [flag:1  e0000000] 
+CPU 1: fib( 34) = 5702887 [flag:0] 
+CPU 2: sum(5702887) = 716736172 [flag:1  e0000000] 
+CPU 1: fib( 35) = 9227465 [flag:0] 
+CPU 2: sum(9227465) = 1343938893 [flag:1  e0000000] 
+CPU 1: fib( 36) = 14930352 [flag:0] 
+CPU 2: sum(14930352) = -983411368 [flag:1  e0000000] 
+CPU 1: fib( 37) = 24157817 [flag:0] 
+CPU 2: sum(24157817) = -4908587 [flag:1  e0000000] 
+CPU 1: fib( 38) = 39088169 [flag:0] 
+terminei CPU fibonacci...
+CPU 2: sum(39088169) = 959458141 [flag:2  e0000000] 
+terminei CPU acumulação...
+Info (HARNESS) Simulation finished
+Info (HARNESS) cpu1 executed 10266302203 instructions, StopReason 'CPU has exited'
+Info (HARNESS) cpu2 executed 12455268671 instructions, StopReason 'CPU has exited'
+Info 
+Info ---------------------------------------------------
+Info CPU 'top/u1/cpu2' STATISTICS
+Info   Type                  : or1k (generic)
+Info   Nominal MIPS          : 100
+Info   Final program counter : 0x19b4
+Info   Simulated instructions: 12,455,268,671
+Info   Simulated MIPS        : 529.3
+Info ---------------------------------------------------
+Info 
+Info ---------------------------------------------------
+Info CPU 'top/u1/cpu1' STATISTICS
+Info   Type                  : or1k (generic)
+Info   Nominal MIPS          : 100
+Info   Final program counter : 0x1a24
+Info   Simulated instructions: 10,266,302,203
+Info   Simulated MIPS        : 436.3
+Info ---------------------------------------------------
+Info 
+Info ---------------------------------------------------
+Info TOTAL
+Info   Simulated instructions: 22,721,570,874
+Info   Simulated MIPS        : 965.6
+Info ---------------------------------------------------
+Info 
+Info ---------------------------------------------------
+Info SIMULATION TIME STATISTICS
+Info   Simulated time        : 124.55 seconds
+Info   User time             : 22.51 seconds
+Info   System time           : 1.02 seconds
+Info   Elapsed time          : 23.55 seconds
+Info   Real time ratio       : 5.29x faster
+Info ---------------------------------------------------
+
+CpuManagerMulti finished: Mon Jul  9 13:21:52 2018
+
+
+CpuManagerMulti (64-Bit) v20170201.0 Open Virtual Platform simulator from www.IMPERAS.com.
+Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
+
+Info Session ended: Mon Jul  9 13:21:52 2018
+

@@ -1,0 +1,47 @@
+<html lang="en">
+<link rel="icon" type="image/icon" href="/imperas.ico">
+
+<head>
+    <title>Imperas Simulation</title>
+    <meta   charset="utf-8"/>
+    <link   rel="stylesheet"        href="normal.css"   type="text/css"/>
+    <script language="JavaScript"   src="runtime.js"        ></script>
+	<style>
+		html, body { margin:0px; border:0px; padding:0px; color: black; background-color:black}
+		.ovpreset img { width:12px;height20px; vertical-align: middle; }
+		.ovppower img { width:12px;height20px; vertical-align: middle; }
+		.ovptext {font-size:12px; color: blue}
+		.divproc { background-color: white; padding:5px; margin:5px; float:left; font-size:11px}
+		h1 { font-size: 12px;}
+		.ovpled img {width:12px; height:12px; vertical-align: middle;}
+	</style>
+</head>
+
+
+<body onload="startRefresh('/', 400);">
+
+
+	<div class="divproc">
+		<h1>Platform <span class='ovptext' id="moduleInstName0"></span></h1>
+		Time: <span class='ovptext' id="moduleSimTime0"></span><br />
+		(press <span class='ovppower' id="power0" onclick="ovpswitchclicked(event)">SIMULATION NOT RUNNING</span> to stop)
+
+    </div>
+
+	<div class="divproc">
+		<h1>Processor <span class='ovptext' id="cpuName1"></span></h1>
+		(press <span class='ovpreset' id="reset1" onclick="ovpswitchclicked(event)"></span> to hold on reset)<br/>
+		intr0. pin value is </span><span class='ovpled' id="cpu1int" ></span><br />
+		instr. count: <span class='ovptext' id="cpu1icount"></span><br />
+	</div>
+	
+	<div class="divproc">
+		<h1>Processor <span class='ovptext' id="cpuName2"></span></h1>
+		(press <span class='ovpreset' id="reset2" onclick="ovpswitchclicked(event)"></span> to hold on reset)<br />
+		intr0. pin value is <span class='ovpled' id="cpu2int" ></span><br />
+		instr. count: <span class='ovptext' id="cpu2icount"></span><br />
+	</div>
+	    
+	<div class='console' id='console'></div>
+</body>
+</html>
